@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="d12.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>NewsHub</h1>
+            <form id="search-bar" class="search-bar">
+                <input type="search" placeholder="Search for news..." />
+                <button type="submit">
+                    <img width="16px" height="16px" src="https://img.icons8.com/pastel-glyph/128/search--v2.png"
+                        alt="search--v2" />
+                    <!-- <img width="24" height="24" src="https://img.icons8.com/ios/50/circled-chevron-up.png" alt="circled-chevron-up"/> -->
+                </button>
+            </form>
+            <div id="filter-bar">
+                <select id="category-filter"></select>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="news-articles" class="news-articles"></section>
+        <template id="article-template">
+            <article class="news-article">
+                <span class="source"></span>
+                <img class="image" src="" alt="" />
+                <h2 class="title"></h2>
+                <div class="metadata">
+                    <span class="author"></span>
+                    <span class="date"></span>
+                </div>
+                <p class="description"></p>
+            </article>
+        </template>
+    </main>
+
+    <script src="new.js"></script>
+</body>
+
+</html>
